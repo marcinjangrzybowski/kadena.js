@@ -76,4 +76,5 @@ export const contentClassVariants: Record<LayoutType, string> = styleVariants({
     paddingTop: 0,
   },
   redocly: {},
+  definition: {},
 });

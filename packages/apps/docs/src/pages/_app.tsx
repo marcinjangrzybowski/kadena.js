@@ -40,6 +40,7 @@ export const MyApp = ({
   Component: FC<IPageProps>;
 }): JSX.Element => {
   const props = deserializePageProps(pageProps);
+  const lName = props.frontmatter.layout;
   const Layout = getLayout(props.frontmatter.layout);
 
   // check for a router query
@@ -150,7 +151,9 @@ export const MyApp = ({
           }}
         >
           <MenuProvider>
-            <Header menuItems={props.leftMenuTree} />
+            {props.frontmatter.layout !== lName && (
+              <Header menuItems={props.leftMenuTree} />
+            )}
             <CookieConsent />
             <Layout {...props}>
               <Component {...props} />

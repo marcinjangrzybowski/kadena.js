@@ -17,10 +17,12 @@ src/pages/build/cookbook/cookbook
 src/pages/chainweb/stream-client
 src/pages/chainweb/node-client
 src/pages/chainweb/js-bindings
-
+src/pages/pact/reference/functions/definitions
 
 .tempimport
 src/pages/docs
+
+
 
 next-env.d.ts
 .env.local

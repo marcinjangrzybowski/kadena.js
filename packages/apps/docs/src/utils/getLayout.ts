@@ -1,5 +1,6 @@
 import { Blog } from '@/components/Layout/Blog/Blog';
 import { Full } from '@/components/Layout/Full/Full';
+import { Definition } from '@/components/Layout/Definition/Definition';
 import { Home } from '@/components/Layout/Home/Home';
 import { Landing } from '@/components/Layout/Landing/Landing';
 import { Redocly } from '@/components/Layout/Redocly/Redocly';
@@ -18,6 +19,8 @@ export const getLayout = (layout: string): FC<IProps> => {
       return Home as unknown as FC<IProps>;
     case 'redocly':
       return Redocly as unknown as FC<IProps>;
+    case 'definition':
+      return Definition as unknown as FC<IProps>;
     default:
       return Landing;
   }

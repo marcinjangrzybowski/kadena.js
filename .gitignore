@@ -96,3 +96,7 @@ temp
 /packages/*/*/test-results
 /packages/*/*/playwright-report
 
+# emacs
+*~
+\#*\#
+.\#*
